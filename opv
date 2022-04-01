@@ -1,0 +1,5 @@
+unzip ~/Downloads/$1 -d ~/Documents/java/test/
+file=$1
+n=${#file}
+len=$(expr $n - 4)
+code ~/Documents/java/test/${file:0:len}
